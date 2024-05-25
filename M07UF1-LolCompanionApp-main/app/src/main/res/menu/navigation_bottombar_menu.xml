@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/builds_bottom_bar_button"
+            android:icon="@drawable/builds_icon"
+            android:title="@string/builds_text">
+        </item>
+
+
+        <item
+            android:id="@+id/create_build_bottom_bar_button"
+            android:icon="@drawable/add_icon"
+            android:title="@string/create_build_text">
+        </item>
+
+
+        <item
+            android:id="@+id/settings_bottom_bar_button"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/settings_title">
+        </item>
+
+    </group>
+
+</menu>

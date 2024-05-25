@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/champions_screen_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChampionsScreen"
+            android:textSize="@dimen/large"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/select_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/giant"
+            android:text="Select an image"
+            android:textSize="@dimen/large"
+            ></TextView>
+
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="Press to select image"
+            >
+        </Button>
+        
+        <ImageView
+            android:id="@+id/selected_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_icon">
+        </ImageView>
+
+        <Button
+            android:id="@+id/upload_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="upload image"
+            >
+        </Button>
+    </LinearLayout>
+
+
+
+    <!-- Navigation hardcodeada, Incluir AL FINAL en BuildsScreen,SettingsScreen y ChampionsScreen-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/navigation_builds_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/builds_text">
+        </Button>
+
+        <Button
+            android:id="@+id/navigation_create_build_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/create_build_text"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_normal">
+        </Button>
+
+        <Button
+            android:id="@+id/navigation_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/settings_title">
+        </Button>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
